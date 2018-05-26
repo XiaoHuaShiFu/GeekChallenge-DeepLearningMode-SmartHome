@@ -165,8 +165,8 @@ Page({
                                     var userImageBase64 = {
                                         "image": base64
                                     }
-                                    var access_token = '24.e539e88acde1160c8c03f29fb4eac389.2592000.1529557951.282335-11240355';
-                                    var request_url = "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/classification/jacksonz";
+                                    var access_token = "";
+                                    var request_url = "";
                                     request_url = request_url + "?access_token=" + access_token;
                                     wx.request({
                                         url: request_url,
@@ -209,8 +209,8 @@ Page({
                 var userImageBase64 = {
                     "image": base64
                 } 
-                var access_token = '24.e539e88acde1160c8c03f29fb4eac389.2592000.1529557951.282335-11240355';
-                var request_url = "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/classification/jacksonz";
+                var access_token = '';
+                var request_url = "";
                 request_url = request_url + "?access_token=" + access_token;
                 wx.request({
                     url: request_url,
