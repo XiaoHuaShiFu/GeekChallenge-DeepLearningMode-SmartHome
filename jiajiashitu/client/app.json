@@ -1,0 +1,16 @@
+{
+    "pages": ["pages/Identify/Identify",
+        "pages/index/index",
+        "pages/addCgi/addCgi"
+        
+        
+        
+    ],
+    "window": {
+        
+        "backgroundTextStyle": "light",
+        
+        "navigationBarTitleText": "Wafer Quick Start",
+        "navigationBarTextStyle": "black"
+    }
+}

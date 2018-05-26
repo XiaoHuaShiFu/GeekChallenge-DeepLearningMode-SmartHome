@@ -1,0 +1,77 @@
+<view class='container'>
+    <view class='img-object-content'>
+        <image class='img-object' src="{{tempFilePaths}}" mode='aspectFit'/>
+    </view>
+    <view class='data-content'>
+        <view class='result-title'>场景识别结果</view>
+        <!-- <view class='scene-content'>
+            <view class='scene-title'>场景</view>
+            <view class='scene1'>
+                <view class='text-data'>{{result[0].root}}</view>
+                <view class='text-data'>{{result[0].score}}</view>
+            </view>
+            <view class='scene1'>
+                <view class='text-data'>{{result[1].root}}</view>
+                <view class='text-data'>{{result[1].score}}</view>
+            </view>
+            <view class='scene1'>
+                <view class='text-data'>{{result[2].root}}</view>
+                <view class='text-data'>{{result[2].score}}</view>
+            </view>
+            <view class='scene1'>
+                <view class='text-data'>{{result[3].root}}</view>
+                <view class='text-data'>{{result[3].score}}</view>
+            </view>
+            <view class='scene1'>
+                <view class='text-data'>{{result[4].root}}</view>
+                <view class='text-data'>{{result[4].score}}</view>
+            </view>
+        </view> -->
+        <view class='scene-content'>
+            <view class='scene-title'>场景</view>
+            <view class='scene1'>
+                <view class='text-data'>{{result[0].name}}</view>
+                <view class='text-data'>{{result[0].score}}</view>
+            </view>
+            <view class='scene1'>
+                <view class='text-data'>{{result[1].name}}</view>
+                <view class='text-data'>{{result[1].score}}</view>
+            </view>
+             <view class='scene1'>
+                <view class='text-data'>{{result[2].name}}</view>
+                <view class='text-data'>{{result[2].score}}</view>
+            </view>
+            <view class='scene1'>
+                <view class='text-data'>{{result[3].name}}</view>
+                <view class='text-data'>{{result[3].score}}</view>
+            </view>
+            <view class='scene1'>
+                <view class='text-data'>{{result[4].name}}</view>
+                <view class='text-data'>{{result[4].score}}</view>
+            </view>  
+        </view>
+    </view>
+    <view class='choose-content'>
+        <view class='red' bindtap='onRedTap'></view>
+        <view class='orange' bindtap='onOrangeTap'></view>
+        <view class='yellow' bindtap='onYellowTap'></view>
+        <view class='green' bindtap='onGreenTap'></view>
+        <view class='sky-blue' bindtap='onSkyBlueTap'></view>
+        <view class='blue' bindtap='onBlueTap'></view>
+        <view class='violet' bindtap='onVioletTap'></view>
+    </view>
+    <view class='upload-content'>
+        <view class='button-bottom' bindtap='onChooseTap'>
+            上传图片
+        </view>
+    </view>
+    <view class='bottom-text-content'>
+        <view class='bottom-text'>From JXandJX</view>
+        <image class='logo-img' src='/images/logo.jpg'></image>
+    </view>
+</view>
+
+<view class='canvas-content'>
+     <canvas canvas-id="myCanvas" style='width:300px;height:225px'/>
+</view>
+
